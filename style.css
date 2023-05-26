@@ -9,3 +9,132 @@
 
     font-family: 'Poppins', sans-serif;
 }
+
+:root {
+    font-size: 62.5%;
+}
+
+
+
+nav{
+    padding: 20px 10%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .logo h2 a{
+    font-size: 4rem;
+    color: black;
+    font-weight: 800;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 10px;
+}
+nav ul li a{
+    font-size: 1.8rem;
+    padding: 10px 20px;
+    color: black;
+    font-weight: 400;
+}
+
+.menu-btn{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===============MEDIA QUERIS=============== */
+
+@media screen and (max-width: 1024px){
+    :root {
+        font-size: 56.25%;
+    }
+
+
+
+
+    nav ul li{
+        margin: 0 5px;
+    }
+    nav ul li a{
+        padding: 7px 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+    nav{
+        position: relative;
+    }
+    nav ul{
+        position: absolute;
+        top: 95px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 95px);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        background-color: white;
+
+        z-index: 5;
+
+        transition: .5s;
+    }
+    nav ul li{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+    nav ul li a{
+        display: inline-block;
+        width: 100%;
+        font-size: 2rem;
+    }
+
+
+
+
+    nav .menu-btn{
+        display: inline-block;
+        border: 2px solid black;
+        border-radius: 5px;
+        cursor: pointer;
+
+    }
+    nav .menu-btn i{
+        font-size: 2.5rem;
+        margin: 5px 15px;
+    }
+
+
+
+    #menu:checked ~ ul{
+        left: 0%;
+    }
+}
