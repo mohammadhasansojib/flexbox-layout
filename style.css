@@ -123,7 +123,7 @@ nav ul li a{
     align-items: center;
     justify-content: center;
 
-    flex: 0 1 300px;
+    flex: 1 1 246.43px;
 
     border-radius: 30px;
 }
@@ -135,6 +135,50 @@ nav ul li a{
 
 
 
+
+
+
+
+
+
+
+/* ============SERVICE SECTION START============== */
+.service-sec{
+    padding: 50px 10%;
+    background-color: rgba(255, 192, 203, 0.206);
+}
+.service-sec h2{
+    font-size: 4.5rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.service-sec .cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+
+    flex-flow: row wrap;
+
+    gap: 40px;
+}
+.service-sec .cards .card{
+    background-color: pink;
+    height: 300px;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 4rem;
+    font-weight: 800;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 1 1 246.43px;
+}
+/* ============SERVICE SECTION END============== */
 
 
 
