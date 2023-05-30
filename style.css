@@ -189,6 +189,54 @@ nav ul li a{
 
 
 
+/* ============CONTACT SECTION START============== */
+.contact-sec{
+    padding: 50px 10%;
+    background-color: rgba(255, 99, 71, 0.132);
+}
+.contact-sec h2{
+    font-size: 4.5rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.contact-sec .form-and-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-flow: row wrap;
+    gap: 40px;
+
+}
+.contact-sec .form-and-img .form,
+.contact-sec .form-and-img .img{
+    background-color: tomato;
+    font-size: 4rem;
+    height: 300px;
+    border-radius: 30px;
+    text-align: center;
+    color: white;
+    font-weight: 800;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 1 1 287.3px;
+}
+/* ============CONTACT SECTION END============== */
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ===============MEDIA QUERIS=============== */
 
@@ -286,6 +334,20 @@ nav ul li a{
         flex: 1 1 287.3px;
     }
     .hero-sec .text-sec{
+        order: 2;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    .contact-sec .form-and-img .form{
         order: 2;
     }
 }
